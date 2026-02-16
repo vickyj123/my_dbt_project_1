@@ -1,0 +1,17 @@
+
+name: 'ons_dbt_project1'
+version: '1.0.0'
+config-version: 2
+
+profile: 'ons_dbt_profile'
+
+model-paths: ['models']
+macro-paths: ['macros']
+seed-paths: ['seeds']
+snapshot-paths: ['snapshots']
+analysis-paths: ['analyses']
+test-paths: ['tests']
+
+models:
+  ons_dbt_project1:
+    +materialized: view
